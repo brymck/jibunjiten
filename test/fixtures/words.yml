@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  english: MyString
+  japanese: MyString
+  category: MyString
+  personal: false
+  comfort: 1
+  memo: MyText
+  user: 
+
+two:
+  english: MyString
+  japanese: MyString
+  category: MyString
+  personal: false
+  comfort: 1
+  memo: MyText
+  user: 

@@ -1,0 +1,4 @@
+jibunjiten
+==========
+
+Just a wordbank.

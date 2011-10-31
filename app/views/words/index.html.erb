@@ -1,0 +1,31 @@
+<h1>Listing words</h1>
+
+<table>
+  <tr>
+    <th>English</th>
+    <th>Japanese</th>
+    <th>Category</th>
+    <th>Personal</th>
+    <th>Comfort</th>
+    <th>Memo</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @words.each do |word| %>
+  <tr>
+    <td><%= word.english %></td>
+    <td><%= word.japanese %></td>
+    <td><%= word.category %></td>
+    <td><%= word.personal %></td>
+    <td><%= word.comfort %></td>
+    <td><%= word.memo %></td>
+    <td><%= link_to 'Edit', edit_user_word_path(@user, word) %></td>
+    <td><%= link_to 'Destroy', [@user, word], confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Word', new_user_word_path(@user) %>
